@@ -1,6 +1,6 @@
 # Tema do Projeto
 
-Apresentação dos dados do Campeonato Brasileiro de Futebol
+Apresentação dos dados do Campeonato Brasileiro de Futebol.
 
 ## Dupla
 
