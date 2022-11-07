@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.campeonato.CampeonatoController">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="9.0" layoutY="75.0" prefHeight="297.0" prefWidth="431.0" style="-fx-background-color: #F8B17F;" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="75.0">
+         <center>
+            <TableView fx:id="tabela" prefHeight="304.0" prefWidth="431.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="columnPosicao" prefWidth="30.0" />
+                <TableColumn fx:id="columnClube" minWidth="150.0" prefWidth="150.0" text="CLUBE" />
+                  <TableColumn fx:id="columnPontos" prefWidth="50.0" text="PTS" />
+                  <TableColumn fx:id="columnJogos" prefWidth="50.0" text="J" />
+                  <TableColumn fx:id="columnVitorias" prefWidth="50.0" text="V" />
+                  <TableColumn fx:id="columnEmpates" prefWidth="50.0" text="E" />
+                  <TableColumn fx:id="columnDerrotas" prefWidth="50.0" text="D" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </center>
+      </BorderPane>
+      <Button layoutX="390.0" layoutY="49.0" mnemonicParsing="false" onAction="#selectClub" text="Buscar" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="49.0" />
+      <MenuButton alignment="CENTER" layoutX="10.0" layoutY="49.0" mnemonicParsing="false" text="Ano" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="49.0">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#abrir2022" text="2022" />
+          <MenuItem mnemonicParsing="false" onAction="#abrir2021" text="2021" />
+          <MenuItem mnemonicParsing="false" onAction="#abrir2020" text="2020" />
+            <MenuItem mnemonicParsing="false" onAction="#abrir2019" text="2019" />
+            <MenuItem mnemonicParsing="false" onAction="#abrir2018" text="2018" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="textField" alignment="CENTER" layoutX="236.0" layoutY="49.0" promptText="Pesquise por um clube" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="49.0" />
+      <TextArea fx:id="textArea" editable="false" layoutX="453.0" layoutY="236.0" prefHeight="136.0" prefWidth="137.0" text="Legenda:&#10;&#10;PTS - Pontos&#10;J - Jogos&#10;V - Vitórias&#10;E - Empates&#10;D - Derrotas" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="10.0" />
+      <ImageView fitHeight="150.0" fitWidth="137.0" layoutX="453.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="173.0" AnchorPane.rightAnchor="10.0">
+         <image>
+            <Image url="@../../../../../Campeonato_Java/imagens/fut.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" alignment="CENTER" layoutX="9.0" layoutY="372.0" prefHeight="17.0" prefWidth="431.0" textAlignment="CENTER" AnchorPane.bottomAnchor="11.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="71.0" layoutY="14.0" prefHeight="25.0" prefWidth="458.0" text="Campeonato Brasileiro de Futebol - Resultados Série A" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_voltar" layoutX="454.0" layoutY="236.0" mnemonicParsing="false" onAction="#voltarTela" prefHeight="25.0" prefWidth="137.0" text="Voltar" visible="false" AnchorPane.bottomAnchor="139.0" AnchorPane.rightAnchor="9.0" />
+   </children>
+</AnchorPane>

@@ -1,8 +1,8 @@
-module com.example.campeonatobrasileiro {
+module javafx.campeonato {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.campeonatobrasileiro to javafx.fxml;
-    exports com.example.campeonatobrasileiro;
+    opens javafx.campeonato to javafx.fxml;
+    exports javafx.campeonato;
 }

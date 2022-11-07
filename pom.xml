@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>CampeonatoBrasileiro</artifactId>
+    <groupId>javafx</groupId>
+    <artifactId>Campeonato</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>CampeonatoBrasileiro</name>
+    <name>Campeonato</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,9 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>
-                                com.example.campeonatobrasileiro/com.example.campeonatobrasileiro.HelloApplication
-                            </mainClass>
+                            <mainClass>javafx.campeonato/javafx.campeonato.CampeonatoApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
